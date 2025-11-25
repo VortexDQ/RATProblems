@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Guide: Remove Viruses & Malware from Your PC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#10b981',
+                        danger: '#ef4444',
+                        dark: '#1e293b',
+                        light: '#f8fafc'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-light text-dark">
+    <!-- Header -->
+    <header class="bg-dark text-white py-6 sticky top-0 z-50 shadow-lg">
+        <div class="max-w-5xl mx-auto px-4">
+            <h1 class="text-3xl md:text-4xl font-bold text-balance">Complete Guide: Remove Viruses & Malware</h1>
+            <p class="text-gray-300 mt-2">Follow these steps carefully to clean your computer</p>
+        </div>
+    </header>
+
+    <!-- Alert Banner -->
+    <div class="bg-danger text-white py-4">
+        <div class="max-w-5xl mx-auto px-4">
+            <p class="font-semibold flex items-start gap-2">
+                <svg class="w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                </svg>
+                <span>Important: Do not skip any steps. Following these instructions in order is crucial for successfully removing malware from your system.</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-4 py-12">
+        
+        <!-- Step 1 -->
+        <section class="mb-16">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">1</div>
+                <h2 class="text-3xl font-bold text-dark">Disconnect from WiFi/Internet</h2>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8 border-l-4 border-primary">
+                <p class="text-lg mb-6 leading-relaxed">Disconnecting from the internet prevents the malware from communicating with external servers, downloading additional threats, or spreading to other devices on your network.</p>
+                
+                <h3 class="text-xl font-semibold mb-4 text-primary">How to Disconnect from WiFi:</h3>
+                
+                <div class="space-y-4">
+                    <div class="flex gap-4">
+                        <span class="bg-gray-200 text-dark w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0">1</span>
+                        <div>
+                            <p class="font-semibold">Click the Network icon in the system tray</p>
+                            <p class="text-gray-600">Located in the bottom-right corner of your screen (next to the clock)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <span class="bg-gray-200 text-dark w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0">2</span>
+                        <div>
+                            <p class="font-semibold">Click on your connected WiFi network</p>
+                            <p class="text-gray-600">It will show as "Connected"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <span class="bg-gray-200 text-dark w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0">3</span>
+                        <div>
+                            <p class="font-semibold">Click "Disconnect"</p>
+                            <p class="text-gray-600">Your WiFi icon should now show as disconnected</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
+                    <p class="text-sm font-semibold text-primary mb-2">Alternative Method:</p>
+                    <p class="text-sm text-gray-700">Turn off your WiFi adapter using the physical switch on your laptop, or unplug your ethernet cable if using a wired connection.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 2 -->
+        <section class="mb-16">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">2</div>
+                <h2 class="text-3xl font-bold text-dark">Boot into Windows Safe Mode</h2>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8 border-l-4 border-primary">
+                <p class="text-lg mb-6 leading-relaxed">Safe Mode starts Windows with only the essential drivers and services, preventing malware from loading automatically. This makes it easier to detect and remove threats.</p>
+                
+                <h3 class="text-xl font-semibold mb-4 text-primary">Method 1: Using System Configuration (Recommended)</h3>
+                
+                <div class="space-y-4 mb-8">
+                    <div class="flex gap-4">
+                        <span class="bg-gray-200 text-dark w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0">1</span>
+                        <div>
+                            <p class="font-semibold">Press Windows key + R</p>
+                            <p class="text-gray-600">This opens the Run dialog box</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <span class="bg-gray-200 text-dark w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0">2</span>
+                        <div>
+                            <p class="font-semibold">Type "msconfig" and press Enter</p>
+                            <p class="text-gray-600">The System Configuration window will open</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <span class="bg-gray-200 text-dark w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0">3</span>
+                        <div>
+                            <p class="font-semibold">Click on the "Boot" tab</p>
+                            <p class="text-gray-600">This tab contains boot configuration options</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <span class="bg-gray-200 text-dark w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0">4</span>
+                        <div>
+                            <p class="font-semibold">Under "Boot options", check the "Safe boot" checkbox</p>
+                            <p class="text-gray-600">Select "Minimal" for the best results</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <span class="bg-gray-200 text-dark w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0">5</span>
+                        <div>
+                            <p class="font-semibold">Click "Apply" and then "OK"</p>
+                            <p class="text-gray-600">You'll be prompted to restart</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <span class="bg-gray-200 text-dark w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0">6</span>
+                        <div>
+                            <p class="font-semibold">Click "Restart"</p>
+                            <p class="text-gray-600">Your computer will reboot into Safe Mode</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-4 text-primary">Method 2: Using Settings (Windows 10/11)</h3>
+                
+                <div class="space-y-4">
+                    <div class="flex gap-4">
+                        <span class="bg-gray-200 text-dark w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0">1</span>
+                        <p>Hold <strong>Shift</strong> and click <strong>Restart</strong> from the Start menu</p>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <span class="bg-gray-200 text-dark w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0">2</span>
+                        <p>Select <strong>Troubleshoot > Advanced options > Startup Settings > Restart</strong></p>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <span class="bg-gray-200 text-dark w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0">3</span>
+                        <p>Press <strong>F4</strong> to enable Safe Mode</p>
+                    </div>
+                </div>
+                
+                <div class="mt-6 bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                    <p class="text-sm font-semibold text-yellow-800 mb-2">Remember:</p>
+                    <p class="text-sm text-gray-700">After cleaning your computer, you'll need to disable Safe Mode by going back to msconfig, unchecking "Safe boot", and restarting normally.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 3 -->
+        <section class="mb-16">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">3</div>
+                <h2 class="text-3xl font-bold text-dark">Run Antivirus Software</h2>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8 border-l-4 border-primary">
+                <p class="text-lg mb-6 leading-relaxed">Now that you're in Safe Mode, it's time to scan and remove the malware. You can use your existing antivirus or download one of these recommended options.</p>
+                
+                <h3 class="text-xl font-semibold mb-4 text-primary">If You Already Have Antivirus:</h3>
+                
+                <div class="space-y-3 mb-8">
+                    <div class="flex gap-3">
+                        <svg class="w-6 h-6 text-secondary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <p>Open your antivirus program</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <svg class="w-6 h-6 text-secondary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <p>Update virus definitions to the latest version</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <svg class="w-6 h-6 text-secondary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <p>Run a <strong>Full System Scan</strong> (not quick scan)</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <svg class="w-6 h-6 text-secondary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <p>Wait for the scan to complete (may take 1-3 hours)</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <svg class="w-6 h-6 text-secondary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <p>Quarantine or delete all detected threats</p>
+                    </div>
+                </div>
+
+                <!-- Updated antivirus recommendations - removed Avast, added Malwarebytes, Bitdefender, Norton, McAfee, TotalAV -->
+                <h3 class="text-xl font-semibold mb-4 text-primary">Recommended Antivirus Software:</h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Malwarebytes -->
+                    <div class="border-2 border-blue-400 rounded-lg p-5 hover:shadow-lg transition-shadow bg-blue-50">
+                        <div class="bg-blue-600 w-16 h-16 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Malwarebytes</h4>
+                        <p class="text-gray-700 mb-3 text-sm leading-relaxed">Industry-leading malware removal tool with excellent detection rates. Free version available with manual scanning.</p>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">Free Trial</span>
+                            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">⭐ Highly Recommended</span>
+                        </div>
+                        <a href="https://www.malwarebytes.com/mwb-download" target="_blank" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors">Download Malwarebytes</a>
+                        <p class="text-xs text-gray-600 mt-3">Best for thorough malware removal</p>
+                    </div>
+
+                    <!-- Bitdefender -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:shadow-lg transition-shadow">
+                        <div class="bg-red-600 w-16 h-16 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Bitdefender</h4>
+                        <p class="text-gray-700 mb-3 text-sm leading-relaxed">Award-winning antivirus with advanced threat detection and minimal system impact. Excellent for comprehensive protection.</p>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs font-semibold">30-Day Trial</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold">Top Rated</span>
+                        </div>
+                        <a href="https://www.bitdefender.com/solutions/free.html" target="_blank" class="inline-block bg-red-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-red-700 transition-colors">Download Bitdefender</a>
+                        <p class="text-xs text-gray-600 mt-3">Lightweight and powerful</p>
+                    </div>
+
+                    <!-- Norton -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:shadow-lg transition-shadow">
+                        <div class="bg-yellow-500 w-16 h-16 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Norton 360</h4>
+                        <p class="text-gray-700 mb-3 text-sm leading-relaxed">Trusted antivirus solution with real-time protection, firewall, and cloud backup. Great all-in-one security suite.</p>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs font-semibold">60-Day Money-Back</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">Established Brand</span>
+                        </div>
+                        <a href="https://us.norton.com/products/norton-360-deluxe" target="_blank" class="inline-block bg-yellow-500 text-white px-6 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition-colors">Download Norton 360</a>
+                        <p class="text-xs text-gray-600 mt-3">Complete security package</p>
+                    </div>
+
+                    <!-- McAfee -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:shadow-lg transition-shadow">
+                        <div class="bg-red-700 w-16 h-16 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">McAfee Total Protection</h4>
+                        <p class="text-gray-700 mb-3 text-sm leading-relaxed">Comprehensive security suite with antivirus, web protection, and identity theft protection for multiple devices.</p>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-semibold">30-Day Trial</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold">Multi-Device</span>
+                        </div>
+                        <a href="https://www.mcafee.com/consumer/en-us/store/m0/catalog/mtp_521/mcafee-total-protection.html" target="_blank" class="inline-block bg-red-700 text-white px-6 py-2 rounded-lg font-semibold hover:bg-red-800 transition-colors">Download McAfee</a>
+                        <p class="text-xs text-gray-600 mt-3">Protect multiple devices</p>
+                    </div>
+
+                    <!-- TotalAV -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:shadow-lg transition-shadow">
+                        <div class="bg-green-600 w-16 h-16 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">TotalAV</h4>
+                        <p class="text-gray-700 mb-3 text-sm leading-relaxed">User-friendly antivirus with real-time protection, system optimization tools, and VPN included in premium plans.</p>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">Free Version</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-xs font-semibold">Easy to Use</span>
+                        </div>
+                        <a href="https://www.totalav.com/antivirus-software" target="_blank" class="inline-block bg-green-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-green-700 transition-colors">Download TotalAV</a>
+                        <p class="text-xs text-gray-600 mt-3">Great for beginners</p>
+                    </div>
+
+                    <!-- Windows Defender -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:shadow-lg transition-shadow">
+                        <div class="bg-blue-500 w-16 h-16 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Windows Defender</h4>
+                        <p class="text-gray-700 mb-3 text-sm leading-relaxed">Built into Windows 10/11. Already installed on your system and provides solid basic protection.</p>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs font-semibold">Pre-Installed</span>
+                        </div>
+                        <p class="inline-block bg-gray-400 text-white px-6 py-2 rounded-lg font-semibold cursor-not-allowed">Already Installed</p>
+                        <p class="text-xs text-gray-600 mt-3">Open via Windows Security settings</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 4 -->
+        <section class="mb-16">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">4</div>
+                <h2 class="text-3xl font-bold text-dark">Delete Temporary Files</h2>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8 border-l-4 border-primary">
+                <p class="text-lg mb-6 leading-relaxed">Malware often hides in temporary files. Clearing these can remove residual threats and free up disk space.</p>
+                
+                <div class="space-y-4">
+                    <div class="flex gap-4">
+                        <span class="bg-gray-200 text-dark w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0">1</span>
+                        <div>
+                            <p class="font-semibold">Press Windows key + R</p>
+                            <p class="text-gray-600">Opens the Run dialog</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <span class="bg-gray-200 text-dark w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0">2</span>
+                        <div>
+                            <p class="font-semibold">Type "temp" and press Enter</p>
+                            <p class="text-gray-600">This opens your temporary files folder</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <span class="bg-gray-200 text-dark w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0">3</span>
+                        <div>
+                            <p class="font-semibold">Select all files (Ctrl + A) and delete them</p>
+                            <p class="text-gray-600">Some files may be in use and can't be deleted - that's okay, skip them</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <span class="bg-gray-200 text-dark w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0">4</span>
+                        <div>
+                            <p class="font-semibold">Repeat with "%temp%" and "prefetch"</p>
+                            <p class="text-gray-600">Type each in the Run dialog to access more temp folders</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 5 -->
+        <section class="mb-16">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">5</div>
+                <h2 class="text-3xl font-bold text-dark">Check Browser Extensions</h2>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8 border-l-4 border-primary">
+                <p class="text-lg mb-6 leading-relaxed">Malicious browser extensions can hijack your browsing, steal data, or display unwanted ads.</p>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="font-semibold text-lg mb-3">For Google Chrome:</h4>
+                        <ol class="space-y-2 list-decimal list-inside text-gray-700">
+                            <li>Type <code class="bg-gray-100 px-2 py-1 rounded">chrome://extensions</code> in the address bar</li>
+                            <li>Review all installed extensions</li>
+                            <li>Remove any extensions you don't recognize or didn't install</li>
+                            <li>Disable suspicious extensions even if you're not sure</li>
+                        </ol>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold text-lg mb-3">For Microsoft Edge:</h4>
+                        <ol class="space-y-2 list-decimal list-inside text-gray-700">
+                            <li>Type <code class="bg-gray-100 px-2 py-1 rounded">edge://extensions</code> in the address bar</li>
+                            <li>Review and remove unwanted extensions</li>
+                        </ol>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold text-lg mb-3">For Firefox:</h4>
+                        <ol class="space-y-2 list-decimal list-inside text-gray-700">
+                            <li>Click the menu button (three lines) → Add-ons and themes</li>
+                            <li>Review Extensions tab and remove suspicious ones</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 6 -->
+        <section class="mb-16">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">6</div>
+                <h2 class="text-3xl font-bold text-dark">Restore Normal Boot & Update</h2>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8 border-l-4 border-primary">
+                <p class="text-lg mb-6 leading-relaxed">Now that you've cleaned your system, it's time to boot back into normal mode and update everything.</p>
+                
+                <h3 class="text-xl font-semibold mb-4 text-primary">Disable Safe Mode:</h3>
+                <div class="space-y-3 mb-8">
+                    <div class="flex gap-3">
+                        <span class="bg-gray-200 text-dark w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0">1</span>
+                        <p>Press <strong>Windows key + R</strong>, type <strong>msconfig</strong></p>
+                    </div>
+                    <div class="flex gap-3">
+                        <span class="bg-gray-200 text-dark w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0">2</span>
+                        <p>Go to the <strong>Boot tab</strong></p>
+                    </div>
+                    <div class="flex gap-3">
+                        <span class="bg-gray-200 text-dark w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0">3</span>
+                        <p><strong>Uncheck "Safe boot"</strong></p>
+                    </div>
+                    <div class="flex gap-3">
+                        <span class="bg-gray-200 text-dark w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0">4</span>
+                        <p>Click <strong>Apply → OK → Restart</strong></p>
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-4 text-primary">Update Your System:</h3>
+                <div class="space-y-3">
+                    <div class="flex gap-3">
+                        <svg class="w-6 h-6 text-secondary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <p>Go to <strong>Settings → Windows Update</strong></p>
+                    </div>
+                    <div class="flex gap-3">
+                        <svg class="w-6 h-6 text-secondary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <p>Click <strong>Check for updates</strong></p>
+                    </div>
+                    <div class="flex gap-3">
+                        <svg class="w-6 h-6 text-secondary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <p>Install all available updates</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <svg class="w-6 h-6 text-secondary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <p>Update your antivirus software to the latest version</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 7 -->
+        <section class="mb-16">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">7</div>
+                <h2 class="text-3xl font-bold text-dark">Change Your Passwords</h2>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8 border-l-4 border-primary">
+                <p class="text-lg mb-6 leading-relaxed">Malware may have captured your passwords. Change them immediately to secure your accounts.</p>
+                
+                <div class="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
+                    <p class="font-semibold text-danger mb-2">Priority Accounts to Update:</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex gap-2"><span class="text-danger">•</span> Email accounts</li>
+                        <li class="flex gap-2"><span class="text-danger">•</span> Banking and financial services</li>
+                        <li class="flex gap-2"><span class="text-danger">•</span> Social media accounts</li>
+                        <li class="flex gap-2"><span class="text-danger">•</span> Online shopping accounts</li>
+                        <li class="flex gap-2"><span class="text-danger">•</span> Any account with saved payment information</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-3">
+                    <p class="font-semibold">Password Best Practices:</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex gap-2">
+                            <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Use passwords with at least 12 characters
+                        </li>
+                        <li class="flex gap-2">
+                            <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Include uppercase, lowercase, numbers, and symbols
+                        </li>
+                        <li class="flex gap-2">
+                            <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Use unique passwords for each account
+                        </li>
+                        <li class="flex gap-2">
+                            <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Consider using a password manager like Bitwarden or LastPass
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Added new section for additional safety and removal tools -->
+        <!-- Step 8: Additional Security Tools -->
+        <section class="mb-16">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">8</div>
+                <h2 class="text-3xl font-bold text-dark">Additional Security & Removal Tools</h2>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8 border-l-4 border-primary">
+                <p class="text-lg mb-6 leading-relaxed">These specialized tools can help improve your system's safety and assist in removing stubborn malware that standard antivirus might miss.</p>
+                
+                <h3 class="text-xl font-semibold mb-4 text-primary">Advanced Malware Removal Tools:</h3>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <!-- Malwarebytes AdwCleaner -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:shadow-lg transition-shadow">
+                        <div class="bg-blue-600 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2">AdwCleaner</h4>
+                        <p class="text-gray-700 mb-3 text-sm leading-relaxed">Specialized tool for removing adware, unwanted toolbars, and browser hijackers. Fast and effective.</p>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-semibold">100% Free</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-semibold">By Malwarebytes</span>
+                        </div>
+                        <a href="https://www.malwarebytes.com/adwcleaner" target="_blank" class="inline-block bg-blue-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors text-sm">Download AdwCleaner</a>
+                    </div>
+
+                    <!-- HitmanPro -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:shadow-lg transition-shadow">
+                        <div class="bg-red-600 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2">HitmanPro</h4>
+                        <p class="text-gray-700 mb-3 text-sm leading-relaxed">Cloud-based second opinion scanner that detects threats missed by primary antivirus. No installation required.</p>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-semibold">30-Day Trial</span>
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-semibold">Deep Scan</span>
+                        </div>
+                        <a href="https://www.hitmanpro.com" target="_blank" class="inline-block bg-red-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-red-700 transition-colors text-sm">Download HitmanPro</a>
+                    </div>
+
+                    <!-- ESET Online Scanner -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:shadow-lg transition-shadow">
+                        <div class="bg-teal-600 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2">ESET Online Scanner</h4>
+                        <p class="text-gray-700 mb-3 text-sm leading-relaxed">Free online scanner that runs directly without installation. Great for one-time deep scans.</p>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-semibold">Free</span>
+                            <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-xs font-semibold">No Install</span>
+                        </div>
+                        <a href="https://www.eset.com/us/home/online-scanner/" target="_blank" class="inline-block bg-teal-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-teal-700 transition-colors text-sm">Use ESET Scanner</a>
+                    </div>
+
+                    <!-- Kaspersky Virus Removal Tool -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:shadow-lg transition-shadow">
+                        <div class="bg-green-700 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2">Kaspersky Virus Removal Tool</h4>
+                        <p class="text-gray-700 mb-3 text-sm leading-relaxed">Powerful free tool for detecting and removing various types of malware. Updated regularly.</p>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-semibold">Free</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full text-xs font-semibold">Portable</span>
+                        </div>
+                        <a href="https://www.kaspersky.com/downloads/free-virus-removal-tool" target="_blank" class="inline-block bg-green-700 text-white px-5 py-2 rounded-lg font-semibold hover:bg-green-800 transition-colors text-sm">Download Kaspersky Tool</a>
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-4 text-primary">System Protection & Safety Tools:</h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- CCleaner -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:shadow-lg transition-shadow">
+                        <div class="bg-orange-500 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2">CCleaner</h4>
+                        <p class="text-gray-700 mb-3 text-sm leading-relaxed">System optimization tool that cleans junk files, manages startup programs, and fixes registry issues.</p>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-semibold">Free Version</span>
+                        </div>
+                        <a href="https://www.ccleaner.com/ccleaner/download" target="_blank" class="inline-block bg-orange-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-orange-600 transition-colors text-sm">Download CCleaner</a>
+                    </div>
+
+                    <!-- Autoruns -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:shadow-lg transition-shadow">
+                        <div class="bg-indigo-600 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2">Autoruns (Sysinternals)</h4>
+                        <p class="text-gray-700 mb-3 text-sm leading-relaxed">Advanced tool to view and disable programs that run at startup. Helps identify malware persistence.</p>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-semibold">Free</span>
+                            <span class="bg-red-100 text-red-800 px-2 py-1 rounded-full text-xs font-semibold">Advanced</span>
+                        </div>
+                        <a href="https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns" target="_blank" class="inline-block bg-indigo-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-indigo-700 transition-colors text-sm">Download Autoruns</a>
+                    </div>
+
+                    <!-- Process Explorer -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:shadow-lg transition-shadow">
+                        <div class="bg-purple-600 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2">Process Explorer</h4>
+                        <p class="text-gray-700 mb-3 text-sm leading-relaxed">Enhanced Task Manager to monitor running processes and identify suspicious activity in real-time.</p>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-semibold">Free</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-semibold">Microsoft</span>
+                        </div>
+                        <a href="https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer" target="_blank" class="inline-block bg-purple-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-purple-700 transition-colors text-sm">Download Process Explorer</a>
+                    </div>
+
+                    <!-- Glasswire -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:shadow-lg transition-shadow">
+                        <div class="bg-cyan-600 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2">GlassWire</h4>
+                        <p class="text-gray-700 mb-3 text-sm leading-relaxed">Network monitoring tool that alerts you to suspicious connections and helps detect malware communication.</p>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-semibold">Free Version</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-semibold">Firewall</span>
+                        </div>
+                        <a href="https://www.glasswire.com/" target="_blank" class="inline-block bg-cyan-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-cyan-700 transition-colors text-sm">Download GlassWire</a>
+                    </div>
+                </div>
+
+                <div class="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
+                    <p class="text-sm font-semibold text-primary mb-2">Pro Tip:</p>
+                    <p class="text-sm text-gray-700">Run these specialized tools after your main antivirus scan for an extra layer of security. Different tools catch different threats!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Added new last resort section for factory reset instructions -->
+        <!-- Step 9: Last Resort - Factory Reset -->
+        <section class="mb-16">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="bg-danger text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">9</div>
+                <h2 class="text-3xl font-bold text-dark">Last Resort: Factory Reset Your Computer</h2>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8 border-l-4 border-danger">
+                <div class="bg-red-50 border-2 border-red-300 rounded-lg p-6 mb-8">
+                    <div class="flex gap-4 items-start">
+                        <svg class="w-10 h-10 text-danger flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                        </svg>
+                        <div>
+                            <h3 class="text-xl font-bold text-danger mb-2">⚠️ Warning: Only Use This as a Last Resort!</h3>
+                            <p class="text-gray-800 leading-relaxed">If the malware persists after trying all the steps above, or if your system is severely compromised, a factory reset is the nuclear option. <strong>This will delete ALL your files, programs, and settings.</strong> Only proceed if you've backed up important data to an external drive or cloud storage.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="text-lg mb-6 leading-relaxed font-semibold">A factory reset will restore your Windows PC to its original state, completely removing all malware, but also everything else.</p>
+
+                <h3 class="text-xl font-semibold mb-4 text-danger">Before You Begin:</h3>
+                <div class="space-y-3 mb-8 bg-yellow-50 border border-yellow-200 rounded-lg p-5">
+                    <div class="flex gap-3">
+                        <svg class="w-6 h-6 text-yellow-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                        </svg>
+                        <p><strong>Back up all important files</strong> to an external hard drive, USB drive, or cloud storage (Google Drive, OneDrive, etc.)</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <svg class="w-6 h-6 text-yellow-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                        </svg>
+                        <p><strong>Write down or save your Windows product key</strong> if you don't have a Microsoft account linked</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <svg class="w-6 h-6 text-yellow-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                        </svg>
+                        <p><strong>Make a list of programs you need to reinstall</strong> and know where to download them</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <svg class="w-6 h-6 text-yellow-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                        </svg>
+                        <p><strong>Ensure your laptop is plugged in</strong> - never perform a factory reset on battery power</p>
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-4 text-danger">Step-by-Step Factory Reset Guide (Windows 10/11):</h3>
+                
+                <div class="space-y-5">
+                    <div class="flex gap-4 bg-gray-50 p-4 rounded-lg">
+                        <span class="bg-danger text-white w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">1</span>
+                        <div class="flex-1">
+                            <p class="font-semibold text-lg mb-2">Open Windows Settings</p>
+                            <p class="text-gray-700">Press <kbd class="bg-white border border-gray-300 px-2 py-1 rounded text-sm">Windows key</kbd> + <kbd class="bg-white border border-gray-300 px-2 py-1 rounded text-sm">I</kbd> on your keyboard</p>
+                            <p class="text-gray-600 text-sm mt-1">Or click Start menu → Settings (gear icon)</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 bg-gray-50 p-4 rounded-lg">
+                        <span class="bg-danger text-white w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">2</span>
+                        <div class="flex-1">
+                            <p class="font-semibold text-lg mb-2">Navigate to Reset Options</p>
+                            <div class="space-y-2">
+                                <p class="text-gray-700"><strong>Windows 11:</strong> Click <strong>System</strong> → <strong>Recovery</strong></p>
+                                <p class="text-gray-700"><strong>Windows 10:</strong> Click <strong>Update & Security</strong> → <strong>Recovery</strong></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 bg-gray-50 p-4 rounded-lg">
+                        <span class="bg-danger text-white w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">3</span>
+                        <div class="flex-1">
+                            <p class="font-semibold text-lg mb-2">Start the Reset Process</p>
+                            <p class="text-gray-700">Under "Reset this PC", click the <strong>Reset PC</strong> button</p>
+                            <p class="text-gray-600 text-sm mt-1">A new window will appear with reset options</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 bg-gray-50 p-4 rounded-lg border-2 border-danger">
+                        <span class="bg-danger text-white w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">4</span>
+                        <div class="flex-1">
+                            <p class="font-semibold text-lg mb-2">Choose Your Reset Option</p>
+                            <div class="space-y-3 mt-3">
+                                <div class="bg-white p-3 rounded border-l-4 border-red-400">
+                                    <p class="font-semibold text-danger mb-1">Option 1: Remove Everything (Recommended for Malware)</p>
+                                    <p class="text-gray-700 text-sm">This completely wipes your drive and reinstalls Windows fresh. <strong>Best for removing persistent malware.</strong></p>
+                                    <p class="text-gray-600 text-xs mt-2">⚠️ All files, apps, and settings will be deleted</p>
+                                </div>
+                                <div class="bg-white p-3 rounded border-l-4 border-blue-400">
+                                    <p class="font-semibold text-primary mb-1">Option 2: Keep My Files</p>
+                                    <p class="text-gray-700 text-sm">Removes apps and settings but keeps personal files. Less thorough for malware removal.</p>
+                                    <p class="text-gray-600 text-xs mt-2">⚠️ May not remove all malware if it's embedded in files</p>
+                                </div>
+                            </div>
+                            <div class="mt-3 bg-red-100 border border-red-300 rounded p-3">
+                                <p class="text-sm font-semibold text-danger">💡 For Severe Infections: Choose "Remove Everything" for the most thorough cleaning</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 bg-gray-50 p-4 rounded-lg">
+                        <span class="bg-danger text-white w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">5</span>
+                        <div class="flex-1">
+                            <p class="font-semibold text-lg mb-2">Choose How to Reinstall Windows</p>
+                            <div class="space-y-2 mt-2">
+                                <div class="flex items-start gap-2">
+                                    <span class="text-secondary">●</span>
+                                    <div>
+                                        <p class="font-semibold">Cloud download (Recommended)</p>
+                                        <p class="text-gray-600 text-sm">Downloads a fresh copy of Windows (requires internet, ~4GB download)</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <span class="text-secondary">●</span>
+                                    <div>
+                                        <p class="font-semibold">Local reinstall</p>
+                                        <p class="text-gray-600 text-sm">Uses Windows files already on your computer (faster, no download needed)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 bg-gray-50 p-4 rounded-lg">
+                        <span class="bg-danger text-white w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">6</span>
+                        <div class="flex-1">
+                            <p class="font-semibold text-lg mb-2">Additional Settings (Optional but Recommended)</p>
+                            <p class="text-gray-700 mb-2">Click <strong>"Change settings"</strong> to access advanced options:</p>
+                            <div class="space-y-2 mt-2">
+                                <div class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-danger flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4"></path>
+                                    </svg>
+                                    <div>
+                                        <p class="font-semibold">Clean data fully? <span class="text-secondary">Yes (Recommended)</span></p>
+                                        <p class="text-gray-600 text-sm">Securely erases files so they can't be recovered. Takes longer but more secure.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-danger flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4"></path>
+                                    </svg>
+                                    <div>
+                                        <p class="font-semibold">Delete files from all drives? <span class="text-danger">Your choice</span></p>
+                                        <p class="text-gray-600 text-sm">If malware spread to other drives, enable this. Otherwise, just clean the Windows drive.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 bg-gray-50 p-4 rounded-lg">
+                        <span class="bg-danger text-white w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">7</span>
+                        <div class="flex-1">
+                            <p class="font-semibold text-lg mb-2">Review and Confirm</p>
+                            <p class="text-gray-700">Windows will show you a summary of what will happen. Read it carefully!</p>
+                            <p class="text-gray-700 mt-2">When you're ready, click <strong>Reset</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 bg-gray-50 p-4 rounded-lg">
+                        <span class="bg-danger text-white w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">8</span>
+                        <div class="flex-1">
+                            <p class="font-semibold text-lg mb-2">Wait for the Process to Complete</p>
+                            <div class="space-y-2 mt-2">
+                                <p class="text-gray-700">Your computer will restart several times</p>
+                                <p class="text-gray-700">The process can take 30 minutes to 2 hours depending on your hardware</p>
+                                <p class="text-gray-700">Don't turn off your computer during this process!</p>
+                                <div class="bg-blue-50 border border-blue-200 rounded p-3 mt-3">
+                                    <p class="text-sm text-gray-700">☕ Grab a coffee and let Windows do its thing. Progress will be shown on screen.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 bg-gray-50 p-4 rounded-lg border-2 border-secondary">
+                        <span class="bg-secondary text-white w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">9</span>
+                        <div class="flex-1">
+                            <p class="font-semibold text-lg mb-2">Set Up Windows Again</p>
+                            <p class="text-gray-700 mb-3">Once complete, you'll go through the initial Windows setup like a brand new computer:</p>
+                            <ul class="space-y-2">
+                                <li class="flex gap-2 text-gray-700">
+                                    <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Choose your language, region, and keyboard layout
+                                </li>
+                                <li class="flex gap-2 text-gray-700">
+                                    <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Sign in with your Microsoft account
+                                </li>
+                                <li class="flex gap-2 text-gray-700">
+                                    <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Configure privacy settings
+                                </li>
+                                <li class="flex gap-2 text-gray-700">
+                                    <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Install Windows updates immediately
+                                </li>
+                                <li class="flex gap-2 text-gray-700">
+                                    <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Install antivirus software before doing anything else
+                                </li>
+                                <li class="flex gap-2 text-gray-700">
+                                    <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Reinstall your programs one by one
+                                </li>
+                                <li class="flex gap-2 text-gray-700">
+                                    <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Scan your backed-up files with antivirus before restoring them
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-green-50 border-2 border-secondary rounded-lg p-6">
+                    <h4 class="text-xl font-bold text-secondary mb-3 flex items-center gap-2">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Congratulations! Your Computer is Now Clean
+                    </h4>
+                    <p class="text-gray-800 leading-relaxed">You now have a fresh, malware-free Windows installation. Follow the prevention tips below to keep it that way, and always practice safe browsing habits moving forward!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prevention Tips -->
+        <section class="mb-16">
+            <div class="bg-secondary text-white rounded-lg shadow-lg p-8 md:p-10">
+                <h2 class="text-3xl font-bold mb-6 flex items-center gap-3">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                    </svg>
+                    Prevent Future Infections
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white bg-opacity-10 rounded-lg p-5">
+                        <h3 class="font-bold text-lg mb-3">Keep Software Updated</h3>
+                        <p class="text-sm leading-relaxed">Regularly update Windows, browsers, and all installed programs. Security patches fix vulnerabilities that malware exploits.</p>
+                    </div>
+                    
+                    <div class="bg-white bg-opacity-10 rounded-lg p-5">
+                        <h3 class="font-bold text-lg mb-3">Be Cautious with Downloads</h3>
+                        <p class="text-sm leading-relaxed">Only download software from official websites. Avoid pirated software, cracks, and "free" versions of paid programs.</p>
+                    </div>
+                    
+                    <div class="bg-white bg-opacity-10 rounded-lg p-5">
+                        <h3 class="font-bold text-lg mb-3">Think Before Clicking</h3>
+                        <p class="text-sm leading-relaxed">Don't click suspicious email links or attachments. Verify sender identity before opening anything unexpected.</p>
+                    </div>
+                    
+                    <div class="bg-white bg-opacity-10 rounded-lg p-5">
+                        <h3 class="font-bold text-lg mb-3">Use Real-Time Protection</h3>
+                        <p class="text-sm leading-relaxed">Keep your antivirus active with real-time scanning enabled. Schedule regular automatic scans.</p>
+                    </div>
+                    
+                    <div class="bg-white bg-opacity-10 rounded-lg p-5">
+                        <h3 class="font-bold text-lg mb-3">Enable Firewall</h3>
+                        <p class="text-sm leading-relaxed">Windows Firewall should always be enabled. It blocks unauthorized network connections to your computer.</p>
+                    </div>
+                    
+                    <div class="bg-white bg-opacity-10 rounded-lg p-5">
+                        <h3 class="font-bold text-lg mb-3">Create Backups</h3>
+                        <p class="text-sm leading-relaxed">Regularly back up important files to an external drive or cloud storage. This protects against ransomware.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Credits Footer -->
+    <footer class="bg-dark text-white py-10">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <div class="mb-4">
+                <p class="text-gray-400 mb-2">Guide Created By</p>
+                <a href="https://youtube.com/@vortexdq" target="_blank" class="inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 transition-colors px-6 py-3 rounded-lg font-bold text-lg">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                    VortexDQ
+                </a>
+            </div>
+            <p class="text-gray-400 text-sm">Subscribe for more tech tutorials and guides!</p>
+            <p class="text-gray-500 text-xs mt-6">© 2025 - Stay Safe Online</p>
+        </div>
+    </footer>
+
+</body>
+</html>
